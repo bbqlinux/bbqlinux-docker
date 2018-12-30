@@ -4,8 +4,6 @@ DOCKER_IMAGE:=base
 
 rootfs:
 	$(eval TMPDIR := $(shell mktemp -d))
-	env -i wget https://raw.githubusercontent.com/bbqlinux/bbqlinux-config/master/src/etc/pacman.x86_64.conf.bbqnew -O rootfs/etc/pacman.conf
-	env -i wget https://raw.githubusercontent.com/bbqlinux/bbqlinux-config/master/src/etc/pacman.bbqlinux.conf -O rootfs/etc/pacman.bbqlinux.conf
 	env -i wget http://mirrorlist.bbqlinux.org/ -O rootfs/etc/pacman.d/bbqlinux-mirrorlist
 	env -i pacstrap -C rootfs/etc/pacman.conf -c -d -G -M $(TMPDIR) $(shell cat packages)
 	cp --recursive --preserve=timestamps --backup --suffix=.pacnew rootfs/* $(TMPDIR)/

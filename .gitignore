@@ -2,6 +2,4 @@
 *.tar
 *.pkg.*
 pkg/
-rootfs/etc/pacman.bbqlinux.conf
-rootfs/etc/pacman.conf
 rootfs/etc/pacman.d/bbqlinux-mirrorlist
