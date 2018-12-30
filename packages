@@ -1,8 +1,10 @@
 base
-sed
-gzip
-pacman
-systemd
 bbqlinux-config
 bbqlinux-keyring
 bbqlinux-mirrorlist
+bbqmkiso
+git
+gzip
+pacman
+sed
+systemd
