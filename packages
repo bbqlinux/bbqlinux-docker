@@ -1,0 +1,7 @@
+sed
+gzip
+pacman
+systemd
+bbqlinux-config
+bbqlinux-keyring
+bbqlinux-mirrorlist
